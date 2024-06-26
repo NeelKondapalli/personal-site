@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.parallax {
+  position: relative;
+  min-height: 75vh;
+  min-width: 2000px;
+  width: 100%;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */
+  display: grid;
+  grid-template-areas: "stack";
+}
